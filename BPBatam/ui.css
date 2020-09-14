@@ -1,0 +1,33 @@
+/*PC mode*/
+html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+  #checkbox{
+     position: absolute;
+    top: 55px;
+    right: 20px;
+    font-size:12px;
+    padding: 8px;
+    background: white;
+    border-radius: 10px;
+    opacity: 0.8;
+      }
+
+  #latlong{
+      position: absolute;
+      top:12%;
+      left: 2%;
+      border-radius: 10px;
+      padding: 8px;
+      opacity: 0.8;
+      background: white;
+      }
+
+
+/*Mobile Mode*/
+
+

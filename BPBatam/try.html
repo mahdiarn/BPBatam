@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Streetview</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <style>
+    html, body{height: 100%;
+        padding: 0;
+        margin: 0;}
+
+    #map,#pano {
+      float: left;
+      height: 100%;
+      width: 50%;
+    }
+    </style>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW4PvMrGlBC7keYWx-RyFebMF9CY5ZKFE&callback=initialize&libraries=&v=weekly"
+      defer
+    ></script>
+
+</head>
+
+<body>
+
+
+<script src="try.js"></script>
+
+<div id="map"></div>
+<div id="pano"></div>
+
+</body>
+
+</html>
