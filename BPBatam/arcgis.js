@@ -118,8 +118,16 @@ function(Map, MapView, FeatureLayer,  BasemapToggle, BasemapGallery, Search, Sce
 
         function showCoordinates (pt) {
             var titik = "Lat/Lon : " + pt.latitude.toFixed(3) + " / " + pt.longitude.toFixed(3);
+            var point = { lat: pt.latitude.toFixed(3), lon: pt.longitude.toFixed(3)}
             koor.innerHTML = titik;
         }
+      
+        function extractCoordinate (pt) {
+              return { lat: pt.latitude.toFixed(3), lng: pt.longitude.toFixed(3) }
+        }
+      
+//         var coord = extractCoordinate(pt);
+//         console.log(coord) menghasilkan { lat: pt.latitude.toFixed(3), lng: pt.longitude.toFixed(3) }
 
         view.watch(["stationary"], function(){
             showCoordinates(view.center);
